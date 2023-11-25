@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-size: cover;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ebe7e7;
+    padding: 20px 10px;
+}
+h1{
+    font-size: 40px;
+}
+header h1{
+    width: 60%;
+    padding-left: 30px;
+}
+.info{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-size: x-large;
+}
+span{
+    color: red;
+}
+main{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+.overall{
+    display: flex;
+    justify-content: space-between;
+}
+.overall .text{
+    width: 40%;
+}
+.overall .images{
+    width: 57%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2,210px);
+    grid-template-areas:
+    "one one two"
+    "one one three";
+    gap: 20px;
+}
+.griditem{
+    box-shadow: 0px 0px 10px 5px grey;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+.griditem-1{
+    grid-area: one;
+    background-image: url('https://burst.shopifycdn.com/photos/man-in-white-and-light-tan-outfit.jpg?width=1000&format=pjpg&exif=0&iptc=0');
+}
+.griditem-2{
+    grid-area: two;
+    background-image: url('https://st4.depositphotos.com/12985790/20643/i/450/depositphotos_206432966-stock-photo-attractive-fashionable-woman-posing-white.jpg');
+}
+.griditem-3{
+    grid-area: three;
+    background-image: url('https://www.apetogentleman.com/wp-content/uploads/2022/05/FALL-WINTER-TRENDS.jpg');
+}
+.suits{
+    margin-top: 100px;
+}
+.suits .heading{
+    margin-bottom: 30px;
+}
+.suits .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,300px);
+    grid-template-areas:
+    "four empty1"
+    "empty2 five";
+    column-gap: 10px;
+}
+.griditem-4{
+    grid-area: four;
+    background-image: url('https://www.realmenrealstyle.com/wp-content/uploads/2023/09/true-blue-suit.jpg');
+}
+.griditem-5{
+    grid-area: five;
+    background-image: url('https://i.pinimg.com/736x/9d/d6/f4/9dd6f4b509e297f3ba1e1447d0c28da8.jpg');
+    background-position: 100% 30%;
+}
+.griditem-e1{
+    grid-area: empty1;
+}
+.griditem-e2{
+    grid-area: empty2;
+}
+.shoes{
+    margin-top: 100px;
+}
+.shoes .heading{
+    margin-bottom: 30px;
+}
+.shoes .images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,430px);
+    grid-template-areas:
+    "six seven"
+    "eight eight"
+    "nine ten";
+    gap: 20px;
+}
+.griditem-6{
+    grid-area: six;
+    background-image: url('https://m.media-amazon.com/images/I/618D+JWGteL._AC_UY580_.jpg');
+}
+.griditem-7{
+    grid-area: seven;
+    background-image: url('https://img.freepik.com/premium-photo/sport-shoes_707345-1920.jpg?size=338&ext=jpg&ga=GA1.1.386372595.1698537600&semt=ais');
+}
+.griditem-8{
+    grid-area: eight;
+    background-image: url('https://robbreport.com/wp-content/uploads/2022/10/RR_Best_Jordan_Sneakers_Lead.jpg?w=1000');
+}
+.griditem-9{
+    grid-area: nine;
+    background-image: url('https://images.unsplash.com/photo-1626947346165-4c2288dadc2a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHNob2V8ZW58MHx8MHx8fDA%3D');
+}
+.griditem-10{
+    grid-area: ten;
+    background-image: url('https://media.istockphoto.com/id/1279108197/photo/variety-of-womens-fashion-comfortable-shoes-of-all-seasons-on-a-light-background-top-view.webp?b=1&s=170667a&w=0&k=20&c=K4XGHnA8DrYHYDKYXLHoRJTiRbNK5Gx4955ADG24hzM=');
+}
